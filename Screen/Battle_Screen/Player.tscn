@@ -12,7 +12,6 @@ __meta__ = {
 "_edit_group_": true,
 "_edit_vertical_guides_": [ 10.0 ]
 }
-tileSize = 3.0
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( -0.835217, 5.7636 )

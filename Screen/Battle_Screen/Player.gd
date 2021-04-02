@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
-export var speed = 1.0
-export var tileSize = 2.0
+export var speed = 0.5
+export var tileSize = 2
 
 onready var sprite = $Sprite
 
