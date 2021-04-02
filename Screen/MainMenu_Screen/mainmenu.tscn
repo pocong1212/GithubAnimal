@@ -9,20 +9,20 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="."]
-margin_left = 462.454
-margin_top = 112.313
-margin_right = 557.454
-margin_bottom = 126.313
+margin_left = 467.454
+margin_top = 95.934
+margin_right = 562.454
+margin_bottom = 109.934
 text = "Animal Taming"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Button" type="Button" parent="."]
-margin_left = 436.003
-margin_top = 233.735
-margin_right = 589.003
-margin_bottom = 272.735
+margin_left = 437.003
+margin_top = 217.356
+margin_right = 590.003
+margin_bottom = 256.356
 text = "New Game"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -30,9 +30,9 @@ __meta__ = {
 
 [node name="Button2" type="Button" parent="."]
 margin_left = 437.003
-margin_top = 310.062
+margin_top = 293.683
 margin_right = 590.003
-margin_bottom = 349.062
+margin_bottom = 332.683
 text = "Continue"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -40,9 +40,9 @@ __meta__ = {
 
 [node name="Button3" type="Button" parent="."]
 margin_left = 437.003
-margin_top = 386.797
+margin_top = 370.418
 margin_right = 590.003
-margin_bottom = 425.797
+margin_bottom = 409.418
 text = "Animalpedia"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -50,9 +50,9 @@ __meta__ = {
 
 [node name="Button4" type="Button" parent="."]
 margin_left = 437.003
-margin_top = 459.363
+margin_top = 442.984
 margin_right = 590.003
-margin_bottom = 498.363
+margin_bottom = 481.984
 text = "How to Play"
 __meta__ = {
 "_edit_use_anchors_": false
