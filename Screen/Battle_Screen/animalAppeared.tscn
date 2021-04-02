@@ -1,0 +1,24 @@
+[gd_scene format=2]
+
+[node name="animalapp" type="Node2D"]
+__meta__ = {
+"_edit_horizontal_guides_": [ 120.0 ],
+"_edit_vertical_guides_": [ 210.0 ]
+}
+
+[node name="TabContainer" type="TabContainer" parent="."]
+margin_left = 50.0
+margin_top = 30.0
+margin_right = 150.0
+margin_bottom = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tabs" type="Tabs" parent="TabContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 24.0
+margin_right = -76.0
+margin_bottom = 20.0

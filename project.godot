@@ -17,7 +17,7 @@ _global_script_class_icons={
 
 config/name="AnimalTaming"
 run/main_scene="res://Screen/MainMenu_Screen/mainmenu.tscn"
-config/icon="res://icon.png"
+config/icon="res://Sprites/icon.png"
 
 [rendering]
 
