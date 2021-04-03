@@ -1,11 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Screen/Battle_Screen/battle.gd" type="Script" id=1]
 [ext_resource path="res://Screen/Battle_Screen/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Screen/Battle_Screen/grass.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Sprites/icon.png" type="Texture" id=4]
 
-[node name="Node2D" type="Node2D"]
+[node name="battle" type="Node2D"]
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_horizontal_guides_": [ 120.0, 0.0 ],
@@ -13,46 +12,29 @@ __meta__ = {
 }
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 100, 40 )
+position = Vector2( 180, 170 )
 z_index = 1000
 
 [node name="Node2D" parent="." instance=ExtResource( 3 )]
-position = Vector2( 50, 40 )
+position = Vector2( 160, 200 )
 
 [node name="Node2D2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 40, 40 )
+position = Vector2( 200, 200 )
 
 [node name="Node2D3" parent="." instance=ExtResource( 3 )]
-position = Vector2( 30, 40 )
+position = Vector2( 240, 200 )
 
 [node name="Node2D4" parent="." instance=ExtResource( 3 )]
-position = Vector2( 60, 40 )
+position = Vector2( 280, 200 )
 
 [node name="Node2D5" parent="." instance=ExtResource( 3 )]
-position = Vector2( 60, 50 )
+position = Vector2( 280, 240 )
 
 [node name="Node2D6" parent="." instance=ExtResource( 3 )]
-position = Vector2( 50, 50 )
+position = Vector2( 240, 240 )
 
 [node name="Node2D7" parent="." instance=ExtResource( 3 )]
-position = Vector2( 40, 50 )
+position = Vector2( 200, 240 )
 
 [node name="Node2D8" parent="." instance=ExtResource( 3 )]
-position = Vector2( 30, 50 )
-
-[node name="icon" type="Sprite" parent="."]
-position = Vector2( 350, 370 )
-texture = ExtResource( 4 )
-
-[node name="icon2" type="Sprite" parent="."]
-position = Vector2( 350, 300 )
-texture = ExtResource( 4 )
-
-[node name="icon3" type="Sprite" parent="."]
-position = Vector2( 350, 230 )
-texture = ExtResource( 4 )
-
-[node name="Camera2D" type="Camera2D" parent="."]
-anchor_mode = 0
-current = true
-zoom = Vector2( 0.2, 0.2 )
+position = Vector2( 160, 240 )

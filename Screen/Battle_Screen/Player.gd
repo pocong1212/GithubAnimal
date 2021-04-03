@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
-export var speed = 0.47
-export var tileSize = 2
+export var speed = 50
+export var tileSize = 6
 
 onready var sprite = $Area2D/Sprite
 onready var animalScn = preload("res://Screen/Battle_Screen/animalAppeared.tscn")
@@ -20,6 +20,9 @@ var openQuest = false
 
 func _ready():
 	initpos = position
+	animal = animalScn.instance()
+	animal.connect("playerMove",self,"openMove")
+	add_child(animal)
 	
 	
 func _process(delta):
@@ -87,23 +90,26 @@ func move(delta): # move the player linearly
 	
 	if terrain == "grass":
 		rnd.randomize()
-		var random_number = rnd.randi_range(0,30)
+		var random_number = rnd.randi_range(0,20)
 		if random_number == 5:
 			print("masuk scene battle")
 			rnd.randomize()
 			var random_animal = rnd.randi_range(1,10)
 			if random_animal < 7:
-				openQuest = true
+				dir = Vector2(0,0)
 				print("Kuda Liar")
-				animal = animalScn.instance()
-				add_child(animal)
+				animal.setQuestion("Apa nama latin dari kuda liar",["kudakudaan","kodok","sapi","kambing",0])
+				openQuest = true
 			elif random_animal < 9:
 				print("Babi Hutan")
 			elif random_animal <= 10:
 				print("Rusa Hutan")
 			
 			
-	
+
+func openMove():
+#	print("panggil",animal)
+	openQuest = false
 
 func checkTerrain():
 	pass

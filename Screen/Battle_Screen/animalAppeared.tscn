@@ -1,16 +1,17 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Screen/Battle_Screen/animalAppeared.gd" type="Script" id=1]
 
 [node name="animalapp" type="Node2D"]
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_horizontal_guides_": [ 120.0 ],
 "_edit_vertical_guides_": [ 210.0 ]
 }
 
 [node name="TabContainer" type="TabContainer" parent="."]
-margin_left = 50.0
-margin_top = 30.0
-margin_right = 150.0
-margin_bottom = 90.0
+margin_right = 283.0
+margin_bottom = 220.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -19,6 +20,71 @@ __meta__ = {
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 4.0
-margin_top = 24.0
-margin_right = -76.0
-margin_bottom = 20.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Button" type="Button" parent="."]
+margin_left = 30.0
+margin_top = 110.0
+margin_right = 120.0
+margin_bottom = 130.0
+text = "A"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 160.0
+margin_top = 110.0
+margin_right = 250.0
+margin_bottom = 130.0
+text = "B"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 30.0
+margin_top = 150.0
+margin_right = 120.0
+margin_bottom = 170.0
+text = "C"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button4" type="Button" parent="."]
+margin_left = 160.0
+margin_top = 150.0
+margin_right = 250.0
+margin_bottom = 170.0
+text = "D"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 50.0
+margin_top = 50.0
+margin_right = 231.0
+margin_bottom = 64.0
+text = "Text"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button5" type="Button" parent="."]
+margin_left = 120.0
+margin_top = 190.0
+margin_right = 159.0
+margin_bottom = 210.0
+text = "Flee"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_Button4_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_Button5_pressed"]

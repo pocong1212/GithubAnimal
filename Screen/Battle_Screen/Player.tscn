@@ -4,25 +4,29 @@
 [ext_resource path="res://Screen/Battle_Screen/Player.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 3.53709, 3.73191 )
+extents = Vector2( 10.803, 11.1432 )
 
 [node name="player" type="KinematicBody2D"]
-position = Vector2( 0, -1.68179 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_vertical_guides_": [ 10.0 ]
 }
 
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2( -0.160461, 11.9136 )
+shape = SubResource( 1 )
+
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Area2D"]
 
 [node name="Sprite" type="Sprite" parent="Area2D"]
-position = Vector2( -0.835217, 5.7636 )
-scale = Vector2( 0.627532, 0.627532 )
+position = Vector2( -25.178, -37.6112 )
+scale = Vector2( 3.13015, 3.13015 )
 texture = ExtResource( 1 )
 centered = false
+offset = Vector2( -2.47745, -2.76208 )
 vframes = 4
 hframes = 3
 frame = 1
@@ -30,9 +34,5 @@ region_rect = Rect2( 20, 3, 16, 20 )
 region_filter_clip = true
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 5.21291, 16.3512 )
-shape = SubResource( 1 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 5.21291, 16.3512 )
+position = Vector2( -0.160461, 11.9136 )
 shape = SubResource( 1 )
